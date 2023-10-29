@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>120140089</title>
+  </head>
+  <style>
+    .container {
+      width: 100%;
+      display: flex;
+      max-width: 850px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <body>
+    <div class="container">
+      {% for produk in data %}
+      <h1>{{ produk.title }}</h1>
+      <p>{{ produk.desk }}</p>
+      {% endfor %}
+    </div>
+  </body>
+</html>
